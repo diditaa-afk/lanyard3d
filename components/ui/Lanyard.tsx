@@ -293,9 +293,7 @@ if (texture) {
           </group>
         </RigidBody>
       </group>
-      <mesh ref={band} geometry={meshLineGeom} material={meshLineMat} />
-
- return (
+  return (
     <mesh ref={band} geometry={meshLineGeom} material={meshLineMat} />
   );
 }
