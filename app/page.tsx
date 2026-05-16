@@ -2,14 +2,14 @@ import Lanyard from "@/components/ui/Lanyard";
 
 export default function Home() {
   return (
-    // 1. Mengubah "items-center" menjadi "items-start" agar objek ditarik ke ujung atas container
-    <div className="flex flex-col flex-1 items-start justify-center bg-transparent min-h-screen w-full">
+    // 1. Mengembalikan "items-center" agar posisi horizontal kembali ke tengah layar
+    <div className="flex flex-col flex-1 items-center justify-start bg-transparent min-h-screen w-full pt-4">
       
-      {/* 2. Menghilangkan "items-center" pada pembungkus Canvas */}
-      <div className="w-full h-[500px] max-w-md flex justify-center bg-transparent">
+      {/* 2. Menambahkan pembungkus div dengan posisi relatif */}
+      <div className="w-full h-[600px] max-w-md flex justify-center bg-transparent relative">
         
-        {/* 3. Menurunkan nilai Y kamera menjadi -5 agar objek lanyard terdorong naik ke atas layar */}
-        <Lanyard position={[0, 4, 18]} gravity={[0, -40, 0]} transparent={true} />
+        {/* 3. Menghapus properti position kustom di sini agar menggunakan setelan default Lanyard.tsx yang stabil */}
+        <Lanyard gravity={[0, -40, 0]} transparent={true} />
         
       </div>
     </div>
