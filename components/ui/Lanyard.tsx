@@ -37,9 +37,9 @@ interface LanyardProps {
 }
 
 export default function Lanyard({
-  position = [0, 0, 20],
+  position = [0, 0, 24],
   gravity = [0, -40, 0],
-  fov = 30,
+  fov = 26,
   transparent = true
 }: LanyardProps) {
   return (
@@ -294,6 +294,6 @@ if (texture) {
         </RigidBody>
       </group>
       <mesh ref={band} geometry={meshLineGeom} material={meshLineMat} />
-      
+
   );
 }
