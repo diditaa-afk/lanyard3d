@@ -2,10 +2,15 @@ import Lanyard from "@/components/ui/Lanyard";
 
 export default function Home() {
   return (
-    // Ubah bagian ini menjadi bg-transparent agar latar belakangnya hilang
-    <div className="flex flex-col flex-1 items-center justify-center bg-transparent min-h-screen">
-      <div className="w-full h-[500px] max-w-md flex items-center justify-center">
-        <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} transparent={true} />
+    // 1. Mengubah "items-center" menjadi "items-start" agar objek ditarik ke ujung atas container
+    <div className="flex flex-col flex-1 items-start justify-center bg-transparent min-h-screen w-full">
+      
+      {/* 2. Menghilangkan "items-center" pada pembungkus Canvas */}
+      <div className="w-full h-[500px] max-w-md flex justify-center bg-transparent">
+        
+        {/* 3. Menurunkan nilai Y kamera menjadi -5 agar objek lanyard terdorong naik ke atas layar */}
+        <Lanyard position={[0, -5, 28]} gravity={[0, -40, 0]} transparent={true} />
+        
       </div>
     </div>
   );
