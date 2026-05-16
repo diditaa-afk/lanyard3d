@@ -239,7 +239,7 @@ if (texture) {
       useMap: true,
       map: texture,
       repeat: new THREE.Vector2(-4, 1),
-      lineWidth: 1
+      lineWidth: 0.50
     } as any);
     return mat;
   }, [texture, isSmall]);
