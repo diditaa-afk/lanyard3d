@@ -9,7 +9,7 @@ export default function Home() {
       <div className="w-full h-[500px] max-w-md flex justify-center bg-transparent">
         
         {/* 3. Menurunkan nilai Y kamera menjadi -5 agar objek lanyard terdorong naik ke atas layar */}
-        <Lanyard position={[0, -5, 28]} gravity={[0, -40, 0]} transparent={true} />
+        <Lanyard position={[0, 4, 18]} gravity={[0, -40, 0]} transparent={true} />
         
       </div>
     </div>
