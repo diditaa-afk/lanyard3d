@@ -37,9 +37,9 @@ interface LanyardProps {
 }
 
 export default function Lanyard({
-  position = [0, -1.5, 23],
+  position = [0, 0, 20],
   gravity = [0, -40, 0],
-  fov = 26,
+  fov = 30,
   transparent = true
 }: LanyardProps) {
   return (
@@ -246,7 +246,7 @@ if (texture) {
 
   return (
     <>
-      <group position={[0, 9, 0]}>
+      <group position={}>
         <RigidBody ref={fixed} {...segmentProps} type={'fixed' as RigidBodyProps['type']} />
         <RigidBody position={[0.5, 0, 0]} ref={j1} {...segmentProps} type={'dynamic' as RigidBodyProps['type']}>
           <BallCollider args={[0.1]} />
