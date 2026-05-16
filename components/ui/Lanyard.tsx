@@ -293,11 +293,7 @@ if (texture) {
           </group>
         </RigidBody>
       </group>
-      <mesh ref={band}>
-  {/* Menggunakan tubeGeometry agar otomatis terender di Readymag */}
-  <tubeGeometry args={[curve, 20, 0.06, 8, false]} />
-  <meshStandardMaterial color="#0047ba" roughness={0.4} />
-</mesh>
-    </>
+      <mesh ref={band} geometry={meshLineGeom} material={meshLineMat} />
+      
   );
 }
