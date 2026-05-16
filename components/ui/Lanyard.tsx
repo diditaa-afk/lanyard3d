@@ -295,5 +295,7 @@ if (texture) {
       </group>
       <mesh ref={band} geometry={meshLineGeom} material={meshLineMat} />
 
+ return (
+    <mesh ref={band} geometry={meshLineGeom} material={meshLineMat} />
   );
 }
